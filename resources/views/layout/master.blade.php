@@ -10,10 +10,15 @@
   <link rel="stylesheet" href="css/chartist.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="images/favicon.html" />
+  <style type="text/css">
+      .background{
+        background-color: #ff422f;
+      }
+  </style>
 </head>
 <body class="sidebar-dark">
   <div class="container-scroller">
-    <nav class="navbar navbar-light col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+    <nav class="navbar navbar-light col-lg-12 col-12 p-0 fixed-top d-flex flex-row background">
       <div class="text-center navbar-brand-wrapper">
         <a class="navbar-brand brand-logo" href="{{url('/')}}">OSS</a>
       </div>
@@ -54,7 +59,7 @@
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="{{url('/')}}">
                 <i class="mdi mdi-gauge menu-icon"></i>
                 <span class="menu-title">Dashboard</span>
               </a>
@@ -89,48 +94,7 @@
           </ul>
         </nav>
         <div class="content-wrapper">
-          <div class="row">
-            <div class="col-sm-6 col-md-3 grid-margin">
-              <div class="card">
-                <div class="card-body">
-                  <h2 class="card-title">Orders</h2>
-                </div>
-                <div class="dashboard-chart-card-container">
-                  <div id="dashboard-card-chart-1" class="card-float-chart"></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-3 grid-margin">
-              <div class="card">
-                <div class="card-body">
-                  <h2 class="card-title">Market Growth</h2>
-                </div>
-                <div class="dashboard-chart-card-container">
-                  <div id="dashboard-card-chart-2" class="card-float-chart"></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-3 grid-margin">
-              <div class="card">
-                <div class="card-body">
-                  <h2 class="card-title">Stock Price</h2>
-                </div>
-                <div class="dashboard-chart-card-container">
-                  <div id="dashboard-card-chart-3" class="card-float-chart"></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-3 grid-margin">
-              <div class="card">
-                <div class="card-body">
-                  <h2 class="card-title">Revenue</h2>
-                </div>
-                <div class="dashboard-chart-card-container">
-                  <div id="dashboard-card-chart-4" class="card-float-chart"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+            @yield('contents')
         </div>
         <footer class="footer">
           <div class="container-fluid clearfix">
