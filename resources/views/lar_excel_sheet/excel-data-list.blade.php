@@ -9,6 +9,7 @@
   <body>
   	<div class="container">
   		<h1 class="text-primary text-center">Laravel Excel Import & Export</h1>
+  		<h5 class="text-info text-center"><a href="https://www.youtube.com/watch?v=rWjj9Slg1og">Lravel Excel youtube video link</a></h5>
   		<div class="row">
   			<a href="{{url('import-cus-data')}}" class="btn btn-primary btn-sm">Import Data</a>
   			<a href="{{url('export')}}" class="btn btn-info btn-sm">Export Data</a>
