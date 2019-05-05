@@ -74,19 +74,43 @@
             <li class="nav-item">
               <a class="nav-link" data-toggle="collapse" href="#layoutsSubmenu" aria-expanded="false" aria-controls="layoutsSubmenu">
                 <i class="mdi mdi-arrow-expand-all menu-icon"></i>
-                <span class="menu-title">Page Layouts</span>
+                <span class="menu-title">Oss-Form-Feature</span>
                 <i class="mdi mdi-chevron-down menu-arrow"></i>
               </a>
               <div class="collapse" id="layoutsSubmenu">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/boxed-layout.html">Boxed</a>
+                    <a class="nav-link" href="{{url('excel-data-list')}}">Excel Import&Export</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/rtl-layout.html">Rtl</a>
+                    <a class="nav-link" href="{{url('textarea_max_length_count')}}">Textarea Max-Length-Count</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pages/layout/horizontal-menu.html">Horizontal Menu</a>
+                    <a class="nav-link" href="{{url('')}}">Rtl</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#fileUpload" aria-expanded="false" aria-controls="fileUpload">
+                <i class="mdi mdi-arrow-expand-all menu-icon"></i>
+                <span class="menu-title">File Upload</span>
+                <i class="mdi mdi-chevron-down menu-arrow"></i>
+              </a>
+              <div class="collapse" id="fileUpload">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{url('file-upload-php')}}">PHP-File-Upload</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{url('textarea_max_length_count')}}">Ajax-File-Upload</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{url('')}}">Multiple-File-Upload-PHP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{url('')}}">Multiple-File-Upload-Ajax</a>
                   </li>
                 </ul>
               </div>
@@ -106,6 +130,7 @@
       </div>
     </div>
   </div>
+  @yield('footer-script')
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

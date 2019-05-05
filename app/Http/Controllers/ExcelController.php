@@ -44,8 +44,4 @@ class ExcelController extends Controller
     	DB::table('excel_customer_sheets')->delete();
     	return back();
     }
-
-    public function getText(){
-        return view('FormFeatureTopics.textarea_max_length_count');
-    }
 }

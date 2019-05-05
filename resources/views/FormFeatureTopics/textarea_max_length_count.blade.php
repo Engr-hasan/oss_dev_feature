@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Textarea maxlength</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-<body>
+@extends('layout.master')
+@section('contents')
 	<div class="container">
 		<div class="card">
 			<div class="card-header bg-primary text-light" style="padding: 2px 5px;">Text Limit plugin use</div>
@@ -25,11 +19,12 @@
 			</div>
 		</div>
 	</div>
+@endsection
+@section('footer-script')
 
 	<script src="{{ asset('js/jquery.min.js') }}" src="" type="text/javascript"></script>
 	<script src="{{ asset('js/jQuery.maxlength.js') }}" src="" type="text/javascript"></script>
 	<script>
 	    $('.maxTextCountDown').maxlength();
 	</script>
-</body>
-</html>
+@endsection
